@@ -42,8 +42,6 @@ li a:hover:not(.active) {
 	padding:1px 16px;
 	height:1100px;
 	width: 85%;
-	background-color: black;
-	opacity: 0.7;
 	overflow: auto;
 	color:white;
     font-family: "DFKai-sb";
