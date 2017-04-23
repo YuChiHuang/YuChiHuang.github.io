@@ -19,9 +19,42 @@
 			<div class="topic">
 				<h2>= ACG相關 =</h2>
 				<div style="float:left; margin-left:50px; font-size:30px">
-					<p>施工中請稍後</p>
+					<h5>Fate/Grand Order 2017愚人節限定卡圖</h5>
+					<span id = counter>1 / 105</span>
+					<br>
+					<img id="showpic" src="image/fgo20170401/001.png"/>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<span style="visibility: hidden">empty</span>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var num = 2;
+			var img;
+			$(document).ready(function(){
+				setInterval(showpic,5000);						
+			});
+			function showpic(){
+				if(num>=105){
+					num = 1;
+				}
+				$("#showpic").fadeOut(1200,function(){
+					if(num<10)
+						img = "image/fgo20170401/00"+num+".png";
+					else if(num<100)
+						img = "image/fgo20170401/0"+num+".png";
+					else
+						img = "image/fgo20170401/"+num+".png";
+					$("#showpic").attr("src",img);
+					$("#showpic").fadeIn(1200);
+					$("#counter").text(num+" / 105");
+					num++;
+				});
+			}
+		</script>
 	</body>
 </html>
