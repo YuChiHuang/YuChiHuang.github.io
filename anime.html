@@ -42,6 +42,7 @@
 			var num = 1;
 			var img;
 			$("#leftButton").click(function(){
+				alert("lb");
 				$("#showpic").fadeOut(500,function(){
 					num--;
 					if(num<1)
@@ -63,6 +64,7 @@
 				});
 			});
 			$("#rightButton").click(function(){
+				alert("rb");
 				$("#showpic").fadeOut(500,function(){
 					num++;
 					if(num>105)
